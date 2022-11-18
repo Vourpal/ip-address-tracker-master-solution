@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Raleway:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+</head>
+
+<body>
+    <div id="background-blue">
+        <h1 class="centerSearch" id="title">IP Address Tracker</h1>
+        <form class="centerSearch" id="formMabinogi">
+            <input type="search" name="Identify" id="searchBar" placeholder="Search for any IP address or domain">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+                    <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+                </svg>
+            </button>
+
+        </form>
+        
+        <div id="informationBlock">
+            <div class="information"><h2>IP Address</h2>
+                <p id="ipAdressChange">...</p>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="information"><h2>Location</h2>
+                <p id="locationChange">...</p>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="information"><h2>Timezone</h2>
+                <p id="timezoneChange">...</p>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="information"><h2>ISP</h2>
+                <p id="ispChange">...</p>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="ok.js"></script>  
+</body>
+
+</html>
