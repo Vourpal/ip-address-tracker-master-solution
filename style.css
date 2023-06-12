@@ -1,110 +1,127 @@
-*{
-    font-size: 18px;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Raleway', sans-serif;
+* {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-body,html {
-    width: 100%;
-    margin: 0;
-    height: 100%;
+body,
+html {
+  width: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 #title {
-    color: white;
-    height: 10px;
-    padding-top: 5px;
+  color: white;
+  height: 10px;
+  padding-top: 5px;
 }
 
 #background-blue {
-    background-image: url("./images/pattern-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-    
+  background-image: url("./images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 .centerSearch {
-    text-align: center;
-    height: 50px;
-    padding-bottom: 30px;
-    position: relative;
-    display: inline-block;
+  text-align: center;
+  height: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  display: inline-block;
 }
 
 #searchBar:focus-visible {
-    outline: 0;
+  outline: 0;
 }
 #searchBar {
-    border-radius: 10px 0px 0px 10px;
-    border: 1px #000 solid;
-    padding: 5px 5px 5px 25px;
-    border-right: none;
-    width: 400px;
-    height: 100%;
-    position: relative;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px #000 solid;
+  padding: 5px 5px 5px 25px;
+  border-right: none;
+  width: 400px;
+  height: 100%;
+  position: relative;
 }
 
 button {
-    background-color: black;
-    border-left: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 0px 10px 10px 0px;
-    position: absolute;
-    top: -.3px;
-    
-
-    
+  background-color: black;
+  border-left: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  top: -0.3px;
 }
 
-#informationBlock{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    align-items: center;
-    top: 154px;
-    width: 80%;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 16px 24px;
-    z-index: 2;
+#informationBlock {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  align-items: center;
+  top: 154px;
+  width: 80%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px 24px;
+  z-index: 2;
 }
-
 
 .information {
-    display: inline-block;
-    color: hsl(0, 0%, 59%);
-    font-size: .8em;
-    background-color: white;
-    margin-right: 70px;
+  display: inline-block;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8em;
+  background-color: white;
+  margin-right: 70px;
 }
 .verticalLine {
-    height: 50px;
-    border-right: 1px solid hsl(0, 0%, 59%);
+  height: 50px;
+  border-right: 1px solid hsl(0, 0%, 59%);
 }
 
 #informationBlock p {
-    text-align: left;
+  text-align: left;
 }
 
 #map {
-    height: calc(100vh - 200px);
-    z-index: 1;
+  height: calc(100vh - 200px);
+  z-index: 1;
 }
 
-@media (max-width: 750px){
-    #informationBlock{
-        flex-flow: column;
-        height: 33vh;
-    }
-    .information{
-        margin-right: 0;
-    }
+@media (max-width: 750px) {
+  * {
+    font-size: 15px;
+    text-align: center;
+  }
+  #title{
+    font-size: 30px;
+  }
+  #informationBlock {
+    flex-flow: column;
+    height: 33vh;
+  }
+  #informationBlock p{
+    text-align: center;
+  }
+  .information {
+    margin-right: 0;
+  }
+  .verticalLine {
+    display: none;
+  }
+  button {
+    top: -0.3px;
+    left: 318px;
+  }
+  #searchBar{
+    width: 354px;
+    left: -14px;
+  }
 }
