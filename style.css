@@ -105,7 +105,7 @@ button {
   }
   #informationBlock {
     flex-flow: column;
-    height: 33vh;
+    min-height: 33vh;
   }
   #informationBlock p{
     text-align: center;
